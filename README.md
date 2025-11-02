@@ -2,7 +2,6 @@
 
 A secure, responsive PHP/MySQL web application for animal shelters to manage adoptable animals with **user ownership** and **admin oversight**.
 
-![Hope4Paws Screenshot](https://via.placeholder.com/800x400/fdfaf6/5a453a?text=Hope4Paws+Animal+Adoption)  
 *Warm brown & orange theme designed for compassion and clarity*
 
 ## ✨ Features
