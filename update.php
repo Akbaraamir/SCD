@@ -23,11 +23,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = $_POST['type'];
     $breed = $_POST['breed'];
     $age = $_POST['age'];
-    $gender = $_POST['gender'];
     $description = $_POST['description'];
     
     $sql = "UPDATE animals SET name='$name', type='$type', breed='$breed', 
-            age='$age', gender='$gender', description='$description' WHERE id=$id";
+            age='$age', description='$description' WHERE id=$id";
     
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Animal updated successfully!'); window.location.href='index.php';</script>";

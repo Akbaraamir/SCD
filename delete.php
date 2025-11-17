@@ -9,7 +9,6 @@ include 'config.php';
 $id = $_GET['id'];
 $user_id = $_SESSION['user_id'];
 
-// Verify ownership
 $sql = "SELECT id FROM animals WHERE id=$id AND user_id=$user_id";
 $result = $conn->query($sql);
 
