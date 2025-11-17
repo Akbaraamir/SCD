@@ -9,7 +9,7 @@ include 'config.php';
 $id = $_GET['id'];
 $user_id = $_SESSION['user_id'];
 
-// Only allow editing if animal belongs to user
+
 $sql = "SELECT * FROM animals WHERE id=$id AND user_id=$user_id";
 $result = $conn->query($sql);
 
@@ -23,10 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $type = $_POST['type'];
     $breed = $_POST['breed'];
     $age = $_POST['age'];
+    $gender = $_POST['gender'];
     $description = $_POST['description'];
     
     $sql = "UPDATE animals SET name='$name', type='$type', breed='$breed', 
-            age='$age', description='$description' WHERE id=$id";
+            age='$age', gender='$gender', description='$description' WHERE id=$id";
     
     if ($conn->query($sql) === TRUE) {
         echo "<script>alert('Animal updated successfully!'); window.location.href='index.php';</script>";

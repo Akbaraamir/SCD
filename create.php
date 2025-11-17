@@ -50,6 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="text" name="breed" required>
             <label>Age (months):</label>
             <input type="number" name="age" min="1" required>
+
             <label>Description:</label>
             <textarea name="description" rows="4" required></textarea>
             <div class="form-buttons">

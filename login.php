@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $username;
             $_SESSION['user_id'] = $row['id'];
-            $_SESSION['role'] = $row['role']; // ← Store role
+            $_SESSION['role'] = $row['role']; 
             header("Location: index.php");
             exit();
         }
